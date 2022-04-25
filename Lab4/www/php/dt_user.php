@@ -25,9 +25,9 @@ require('../query/conDB.php');
                 <td><?= $row['sname'] ?></td>
                 <td><?= $row['age'] ?></td>
                 <td><?= $row['sex'] ?></td>
-                <td> 
-                    <button class="dtn_del"data-name="<?= $row['name']?>">DEL</button>
-             </td>
+                <td>
+                    <button class="btn-del" data-name="<?= $row['name']?>">DEL</button>
+                </td>
             </tr>
         <?php
         }
