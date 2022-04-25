@@ -1,0 +1,16 @@
+<input type="text" id="cmd" />
+<button id="btn_cmd">Send</button>
+<div id="div_cmd"></div>
+
+<script>
+  $("#btn_cmd").click(function () {
+    $.ajax({
+      url: "./php/ssh.php",
+      data: { cmd: $("#cmd").val() },
+      method: "GET",
+      success: function (data) {
+        $("#div_cmd").html(data);
+      },
+    });
+  });
+</script>

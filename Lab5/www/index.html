@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <button id="btn_add">Add</button>
+        <button id="btn_list">List</button>
+        <button id="btn_profile">Profile</button>
+        <button id="btn_ssh">SSH</button>
+    </div>
+  <div class="row">
+        <div id="div_content"></div>
+     </div>    
+    </body>
+</html>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+  $("#btn_add").click(function(){
+    $("#div_content").load("./php/form.php");
+  });
+
+  $("#btn_list").click(function(){
+    $("#div_content").load("./php/dt_user.php");
+  });
+
+  $("#btn_profile").click(function(){
+    $("#div_content").load("./php/profile.php");
+  });
+
+  $("#btn_ssh").click(function(){
+    $("#div_content").load("./ssh.html");
+  });
+</script>
+
